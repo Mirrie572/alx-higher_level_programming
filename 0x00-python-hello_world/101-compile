@@ -1,2 +1,8 @@
 #!/bin/bash
-python3 -m compileall -b $PYFILE
+
+python3 -m compileall $PYFILE
+EXT=".pyc"
+TMP=".cpython-38.pyc"
+
+mv ./__pycache__/${PYFILE%.*}${TMP} ./${PYFILE%.*}${EXT}
+rm -rf ./__pycache__
