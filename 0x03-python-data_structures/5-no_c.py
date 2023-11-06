@@ -12,4 +12,4 @@ def no_c(my_string):
     for char in my_string:
         if ord(char) not in (67, 99):
             new_string += char
-    return new_string
+    return ''.join(new_string)
