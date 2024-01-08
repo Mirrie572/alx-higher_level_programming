@@ -1,19 +1,14 @@
-
-  #!/usr/bin/python3
-"""Inherits from list and provides a"""
+#!/usr/bin/python3
+"""MyInt class module"""
 
 
 class MyInt(int):
-    """
-        Inherits from list and provides a
-        method to print sorted list.
-    """
-
+    """A MyInt class"""
     def __eq__(self, other):
-        """Inherits from list and provides a"""
-        return super().__ne__(other)
+        """Overides and inverts == operator"""
+        return int(self) != int(other)
 
     def __ne__(self, other):
-        """Inherits from list and provides a"""
-        return super().__eq__(other)
+        """Overides and inverts != operator"""
+        return int(self) == int(other)
   
